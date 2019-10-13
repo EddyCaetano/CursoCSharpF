@@ -22,7 +22,10 @@ namespace CursoCSharpF.ConsoleApp
             int idade = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("==================================================================");
+
+            //========= Imprimindo com concatenação
             Console.WriteLine("O nome é: " + primeiroNome + " Sobrenome " + sobrenome + " Idade: " + idade);
+            //========= Imprimindo com interpolação de strings
             Console.WriteLine($"O nome é: {primeiroNome} Sobrenome {sobrenome} Idade: {idade}");
 
             Console.ReadLine();
