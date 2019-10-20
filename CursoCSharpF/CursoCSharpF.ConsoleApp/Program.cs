@@ -36,6 +36,7 @@ namespace CursoCSharpF.ConsoleApp
             numero = Modulo(n1, n2);
             Console.WriteLine($"A sovbra da divisão é {numero}");
 
+            Console.WriteLine("________________________________________________");
 
             Console.ReadLine();
         }
