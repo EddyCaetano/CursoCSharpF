@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using Bebidas.ConsoleApp.Classes;
+
 namespace Bebidas.ConsoleApp
 {
     class Program
@@ -13,30 +15,32 @@ namespace Bebidas.ConsoleApp
             Console.WriteLine("***** Loja de Bebidas *****");
             Console.WriteLine("Bem-Vindo a loja");
 
-            List<string> listaClientes = new List<string>();
-
-            for (int i=0; i<3; i++)
+            Dados dados = new Dados();
+           
+            for (int i=0; i<2; i++)
             {
-                string nc = CadastrarCliente();
-                listaClientes.Add(nc);
+                Pessoa p = CadastrarCliente();
+                dados.Salvar(p);
             }
             //listaClientes = listaClientes.OrderBy(i => i).ToList();//sistema de ordenação de lista
-            foreach (string item in listaClientes)
+            List<Pessoa> listaClientes = dados.LerTodos();
+            foreach (Pessoa item in listaClientes)
             {
-                Console.WriteLine($"Nome: {item}");
+                Console.WriteLine($"Nome completo: {item.Nome} {item.Sobrenome}");
             }
             
-            Console.Read();
+            Console.Read();//não fechar o console
         }
-        static string CadastrarCliente()
+        static Pessoa CadastrarCliente()
         {
+            Pessoa pessoa1 = new Pessoa();
             Console.Write("Digite o seu nome: ");
-            string nome = Console.ReadLine();
+            pessoa1.Nome = Console.ReadLine();
             Console.Write("Digite o seu Sobrenome: ");
-            string sobrenome = Console.ReadLine();
-            string nomeCompleto = $"{nome} {sobrenome}";
+            pessoa1.Sobrenome = Console.ReadLine();
+            //tring nomeCompleto = $"{pessoa1.Nome} {pessoa1.Sobrenome}";
+            return pessoa1;
 
-            return nomeCompleto;
         }
     }
 }
