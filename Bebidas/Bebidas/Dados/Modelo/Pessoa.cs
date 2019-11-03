@@ -4,20 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bebidas.ConsoleApp.Classes
+namespace Dados.Modelo
 {
     public class Pessoa
     {
         #region Propriedades
         public string Nome { get; set; }
         public string Sobrenome { get; set; }
-
+        public string CPF { get; set; }
         #endregion
         #region Metodos
         public override string ToString()
         {
-            return $"{Nome};{Sobrenome}";
+            return $"{Nome};{Sobrenome};{CPF}";
         }
+
         #endregion
     }
 }
