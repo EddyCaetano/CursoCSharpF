@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsApp", "WindowsApp\Wi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dados", "Dados\Dados.csproj", "{938ED50A-0551-425D-B67F-DAA1A94B5EFE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppWebForms", "WebAppWebForms\WebAppWebForms.csproj", "{7E1364FA-0491-47B0-970C-B9C5C8D8B1EF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{938ED50A-0551-425D-B67F-DAA1A94B5EFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{938ED50A-0551-425D-B67F-DAA1A94B5EFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{938ED50A-0551-425D-B67F-DAA1A94B5EFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E1364FA-0491-47B0-970C-B9C5C8D8B1EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E1364FA-0491-47B0-970C-B9C5C8D8B1EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E1364FA-0491-47B0-970C-B9C5C8D8B1EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E1364FA-0491-47B0-970C-B9C5C8D8B1EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -15,7 +15,7 @@ namespace WindowsApp
     public partial class Form1 : Form
     {
         ArquivoTexto dados = new ArquivoTexto();
-        public Form1()
+        public Form1()  // Quando começa o programa0
         {
             InitializeComponent();
             ListarPessoas();
